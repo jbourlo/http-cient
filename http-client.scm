@@ -614,7 +614,7 @@
                       (values data (request-uri request) response)))))
             (else (let ((data (reader response)))
                     (cleanup! #f)
-                    (values data (request-uri req) response)))))
+                    (values data req response)))))
       (exn (exn i/o net)
            (close-connection! (request-uri req))
            (if (and (or (not (max-retry-attempts)) ; unlimited?
