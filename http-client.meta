@@ -1,0 +1,8 @@
+;; -*- Scheme -*-
+
+((synopsis "High-level HTTP client library")
+ (depends (intarweb "1.5") (uri-common "0.7") (message-digest "3.0.0")
+          (md5 "3.0.0") string-utils (sendfile "1.7.4"))
+ (author "Peter Bex")
+ (category net)
+ (license "BSD"))

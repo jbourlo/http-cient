@@ -1,0 +1,14 @@
+;; -*- Scheme -*-
+
+(define port-feature
+  (if (version>=? (chicken-version) "4.6.0")
+      "-Dhas-port-closed" ""))
+
+(compile -s -O2 ,port-feature http-client.scm -j http-client)
+(compile -s -O2 http-client.import.scm)
+
+(install-extension
+  'http-client
+  '("http-client.so" "http-client.import.so")
+  `((version "0.10")
+    (documentation "http-client.html")))
