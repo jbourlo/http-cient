@@ -1,3 +1,3 @@
 (repo git "git://github.com/jbourlo/http-client.git")
-(uri targz "https://github.com/jbourlo/http-client/tarball/1")
+(uri targz "https://github.com/jbourlo/http-cient/tarball/1")
 (release "1")
